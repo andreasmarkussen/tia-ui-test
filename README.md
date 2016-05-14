@@ -21,6 +21,7 @@ or if you want to use the wdio test runner
 
 ```shell
 npm install -g webdriverio
+npm install selenium-standalone@latest -g
 ```
 
 # Repositories that I got inspiration from
