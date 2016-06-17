@@ -1,0 +1,12 @@
+var assert = require('assert');
+
+describe('local_test_page', function() {
+    it('should have the right title - the fancy generator way', function () {
+        browser.url('file:///C:/dev/test.html');
+        var title = browser.getTitle();
+        assert.equal(title, 'MyTitle');
+    });
+});
+
+
+

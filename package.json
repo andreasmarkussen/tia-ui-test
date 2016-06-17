@@ -1,0 +1,30 @@
+{
+  "name": "auto-ui-2016",
+  "version": "1.0.0",
+  "description": "Automatic UI Test Examples 2016",
+  "main": "main.js",
+  "dependencies": {
+    "wdio-selenium-standalone-service": "^0.0.3",
+    "webdriverio": "^4.0.7"
+  },
+  "devDependencies": {
+    "wdio-dot-reporter": "0.0.5",
+    "wdio-mocha-framework": "^0.2.13"
+  },
+  "scripts": {
+    "test": "wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreasmarkussen/auto-ui-2016.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Andreas Markussen <andreas@markussen.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreasmarkussen/auto-ui-2016/issues"
+  },
+  "homepage": "https://github.com/andreasmarkussen/auto-ui-2016#readme"
+}
