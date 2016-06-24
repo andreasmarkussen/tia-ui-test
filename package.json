@@ -8,11 +8,13 @@
     "webdriverio": "^4.0.7"
   },
   "devDependencies": {
+    "eslint": "latest",
     "wdio-dot-reporter": "0.0.5",
     "wdio-mocha-framework": "^0.2.13"
   },
   "scripts": {
-    "test": "wdio"
+    "test": "wdio",
+    "pretest": "eslint **/**.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,17 @@
   "bugs": {
     "url": "https://github.com/andreasmarkussen/auto-ui-2016/issues"
   },
-  "homepage": "https://github.com/andreasmarkussen/auto-ui-2016#readme"
+  "homepage": "https://github.com/andreasmarkussen/auto-ui-2016#readme",
+  "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 6
+        },
+        "env": {
+            "browser": true,
+            "node": true,
+            "jasmine": true,
+            "mocha":true,
+            "jquery":true
+        }
+    }
 }

@@ -1,5 +1,4 @@
 exports.config = {
-    
     //
     // ==================
     // Specify Test Files
@@ -115,7 +114,6 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
     reporters: ['dot'],
-    
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -183,4 +181,4 @@ exports.config = {
     // possible to defer the end of the process using a promise.
     // onComplete: function(exitCode) {
     // }
-}
+};

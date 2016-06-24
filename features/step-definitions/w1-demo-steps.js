@@ -1,5 +1,5 @@
+"use strict";
 // features/step_definitions/my_step_definitions.js
-
 module.exports = function () {
   this.Given('I am at the first page of the W1 Demosite', function (callback) {
     // Express the regexp above with the code you wish you had.

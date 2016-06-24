@@ -1,3 +1,4 @@
-/*var firstPage = require('../src/page.first.js');
-firstPage.visit()
-        .end();*/
+"use strict";
+var PageFirst = require('./src/page.first.js');
+PageFirst.visit()
+         .end();
