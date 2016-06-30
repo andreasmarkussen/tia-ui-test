@@ -10,7 +10,9 @@
   "devDependencies": {
     "eslint": "latest",
     "wdio-dot-reporter": "0.0.5",
-    "wdio-mocha-framework": "^0.2.13"
+    "chai":"*",
+    "wdio-mocha-framework": "^0.2.13",
+    "wdio-chai-plugin": "*"
   },
   "scripts": {
     "test": "wdio",
