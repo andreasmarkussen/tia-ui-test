@@ -59,11 +59,11 @@ typings install dt~webdriverio --global
 #Build - TODO
 
 Steps
-1) Typescript conversion
-2) ES6 linting
-3) Unittesting with Jasmine (No real browsers - only local files via phanthom)
-4) End to end UI testing with Mocha
-5) End to end UI testing with cuecumber
+1. Typescript conversion
+2. ES6 linting
+3. Unittesting with Jasmine (No real browsers - only local files via phanthom)
+4. End to end UI testing with Mocha
+5. End to end UI testing with cuecumber (BDD style english clear text)
 
 https://www.sitepoint.com/introduction-gulp-js/
 https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html 
