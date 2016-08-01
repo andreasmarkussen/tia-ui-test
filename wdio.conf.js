@@ -15,6 +15,7 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+    debug: true,
     //
     // ============
     // Capabilities
@@ -42,8 +43,9 @@ exports.config = {
         // grid with only 5 firefox instance available you can make sure that not more than
         // 5 instance gets started at a time.
         maxInstances: 5,
-        //
-        browserName: 'firefox'
+//        browserName: 'firefox'
+        browserName: 'phantomjs'
+        //browserName: 'Chrome'
     }],
     //
     // ===================
@@ -67,7 +69,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
-    baseUrl: 'demo.worldticket.net',
+//baseUrl: 'demo.worldticket.net',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,

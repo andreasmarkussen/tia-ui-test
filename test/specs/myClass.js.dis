@@ -1,0 +1,10 @@
+"use strict";
+class MyClass {
+    sayHello() {
+        console.log("Hello" + name);
+    }
+    sayAge(age) {
+        console.log("You are " + age);
+    }
+}
+exports.MyClass = MyClass;

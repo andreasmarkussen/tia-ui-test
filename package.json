@@ -4,17 +4,19 @@
   "description": "Automatic UI Test Examples 2016",
   "main": "main.js",
   "dependencies": {
+    "q": "^1.4.1",
     "wdio-selenium-standalone-service": "^0.0.3",
     "webdriverio": "^4.0.7"
   },
   "devDependencies": {
     "eslint": "latest",
-    "wdio-dot-reporter": "0.0.5",
-    "chai":"*",
+    "wdio-dot-reporter": "latest",
+    "chai": "*",
     "wdio-mocha-framework": "^0.2.13",
     "wdio-chai-plugin": "*"
   },
   "scripts": {
+    "build": "tsc -p ./src",
     "test": "wdio",
     "pretest": "eslint **/**.js"
   },
@@ -32,15 +34,15 @@
   },
   "homepage": "https://github.com/andreasmarkussen/auto-ui-2016#readme",
   "eslintConfig": {
-        "parserOptions": {
-            "ecmaVersion": 6
-        },
-        "env": {
-            "browser": true,
-            "node": true,
-            "jasmine": true,
-            "mocha":true,
-            "jquery":true
-        }
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jasmine": true,
+      "mocha": true,
+      "jquery": true
     }
+  }
 }

@@ -1,0 +1,11 @@
+export class MyClass{
+    name: string;
+    sayHello(){
+        console.log("Hello"+name);
+    }
+
+    sayAge(age: number){
+        console.log("You are "+age);
+    }
+} 
+

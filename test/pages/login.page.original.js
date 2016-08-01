@@ -1,4 +1,5 @@
 "use strict";
+/// <reference path="page.ts" />
 /// <reference path="typings/index.d.ts" />
 const page_1 = require("./page");
 let page = new page_1.Page();
@@ -16,7 +17,9 @@ var localPage = Object.create(page, {
      * define or overwrite page methods
      */
     open: { value: function () {
-            page.openUrl.call(this, 'http://tia-app53:7005/tiaweb/faces/UIShell');
+            page.openUrl('http://tia-app53:7005/tiaweb/faces/UIShell', 'TIA');
+            //page.openUrl('http://tia-app53:7005/tiaweb/faces/UIShell','\/TIA\/');
+            //page.openUrl.call(this, 'http://tia-app53:7005/tiaweb/faces/UIShell','\/TIA\/');
             //       page.openUrl.call(this, 'file///c:/dev/test.html');
         } },
     submit: { value: function () {
@@ -26,13 +29,13 @@ var localPage = Object.create(page, {
                 //console.log("Browser name",browser.prototype.constructor.name);
                 //           console.log("Browser %j ",browser);
                 var btns = browser.element('button');
-                //   console.log("BTN text '%s' ",btns.getText());    
-                console.log("BTN JSON '%s' ", JSON.stringify(btns));
+                console.log("BTN text '%s' ", btns.element.name);
+                //                console.log("BTN JSON '%s' ", JSON.stringify(btns));
                 var btn2 = browser.element('button#btn2');
-                // console.log("BTN text '%s' ",btn2.getText());    
-                //console.log("BTN JSON b2 '%s' '%s'  ",JSON.stringify(btn2),formatElementStatus(btn2));    
+                //              console.log("BTN text '%s' ", btn2.getText());
+                console.log("BTN JSON b2 '%s' '%s'  ", JSON.stringify(btn2), page.ElementToString(btn2[0]));
                 var btn3 = browser.element('button#btn3');
-                //   console.log("BTN text '%j' '%s'  ",btn3.,formatElementStatus(btn3));   
+                console.log("BTN text '%j' '%s'  ", btn3, page.ElementToString(btn3[0]));
                 console.log("BTN JSON b3 '%s' ", JSON.stringify(btn3));
                 var btn_submit = browser.element('button#submit');
                 //console.log("BTN text '%s' ",btn2.getText());    

@@ -3,8 +3,8 @@ var webdriverio = require('webdriverio');
 var browser = webdriverio.browser;
 var options = {
     desiredCapabilities: {
-        browserName: 'firefox'
-//        browserName: 'chrome'
+       browserName: 'phanthomjs'
+ //       browserName: 'chrome'
     }
 };
  

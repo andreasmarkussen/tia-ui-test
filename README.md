@@ -1,3 +1,7 @@
+# tia-ui-test
+A prototype of testing TIA with UI - HOBBY PROJECT
+
+based on 
 # auto-ui-2016
 Example of state-of-the-art Automatic UI testing, that benefits the business, is easy to write and maintain, and shows the right bugs in the system under test.
 The three goals above, are prioritized, however, if one of the three fail, then none of the others matter.
@@ -86,4 +90,3 @@ http://stackoverflow.com/questions/4811962/how-to-css-select-element-based-on-in
 
 ## JavaScript and Promisses
 https://spring.io/understanding/javascript-promises
-
